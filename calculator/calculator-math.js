@@ -1,3 +1,5 @@
+// This file contains the functions to be called out in calculator-inputs.js to perform each math operation.
+
 const add = (number1, number2) => {
     const result = number1 + number2;
     return result;
@@ -27,11 +29,6 @@ const remainder = (number1, number2) => {
     const result = number1 % number2;
     return result;
 }
-
-// console.log(add(2, 5));
-// console.log(subtract(6, 2))
-// console.log(multiply(3, 5))
-// console.log(divide(10, 2))
 
 module.exports = {
     add,

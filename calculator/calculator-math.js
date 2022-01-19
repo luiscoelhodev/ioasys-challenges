@@ -1,4 +1,4 @@
-// This file contains the functions to be called out in calculator-inputs.js to perform each math operation.
+// This file contains the functions to be called out in calculator-inputs.js to perform each math operation
 
 const add = (number1, number2) => {
     const result = number1 + number2;

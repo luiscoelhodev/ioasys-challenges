@@ -20,7 +20,7 @@ const userToBeChecked = { // This is an example of a user search which will be a
     Course: "ioasysCamp"
 }
 
-const userToBeChecked2 = { // This is an example of a user which is not going to be found
+const userToBeChecked2 = { // This is an example of a user search with empty fields
     Name: "Luis Coelho",
     Age: 28,
     Nationality: "", 
@@ -29,7 +29,7 @@ const userToBeChecked2 = { // This is an example of a user which is not going to
     Course: "ioasysCamp"
 }
 
-const userToBeChecked3 = {
+const userToBeChecked3 = { // This is an example of a user which will not be found
     Name: "Street Fighter",
     Age: 35,
     Nationality: "American", 
@@ -77,12 +77,3 @@ const compareObjects = (object1, object2, callback) => { // Checks users and fin
 compareObjects(registeredUser, userToBeChecked, validation.isEmpty); // This user will be found
 compareObjects(registeredUser, userToBeChecked2, validation.isEmpty); // This input is missing fields
 compareObjects(registeredUser, userToBeChecked3, validation.isEmpty); // This user will not be found
-
-
-// Object.keys(registeredUser).forEach(key => {
-//     let value = registeredUser[key];
-
-//     if (validation.isEmpty(value) == true) {
-//         console.log(`${key} is empty!`)
-//     }
-// });
